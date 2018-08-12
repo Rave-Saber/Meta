@@ -23,5 +23,17 @@ prototyping & testing - not for use in a hilt. The hardware is assembled using
 a breadboard & powered via a bench power supply, and the firmware allows for
 switching between various blade colors.
 
+## License
+
+These licenses apply to every [Rave Saber](https://github.com/Rave-Saber/)
+repository:
+
+* **Code:** GPL v3.0
+* **Hardware:**: CERN OHL v1.2
+* **Content/Media:** CC BY-NC-SA v4.0
+
+Feel free to contact us for exceptions.
+
+
 [hw1.0.0]: https://github.com/Rave-Saber/Rave-Saber-Hardware/tree/v1.0.0
 [fw1.0.0]: https://github.com/Rave-Saber/Rave-Saber-Firmware/tree/v1.0.0
