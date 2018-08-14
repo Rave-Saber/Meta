@@ -29,7 +29,7 @@ These licenses apply to every [Rave Saber](https://github.com/Rave-Saber/)
 repository:
 
 * **Code:** GPL v3.0
-* **Hardware:**: CERN OHL v1.2
+* **Hardware:** CERN OHL v1.2
 * **Content/Media:** CC BY-NC-SA v4.0
 
 Feel free to contact us for exceptions.
