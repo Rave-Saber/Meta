@@ -19,22 +19,20 @@ should be used with v1 of the hardware.
 * [Hardware v2.0.0][hw2.0.0]
 * [Firmware v2.0.0][fw2.0.0]
 
-This is the next step up from a breadboard & wired power supply: a
-battery-powered prototyping board & LED strip, made mobile by zip-tieing
-everything to a 1" x 2" piece of wood. 
+This is the first semi-portable design. Instead of a breadboard & bench power
+supply, the components are soldered onto a prototyping board & a voltage
+regulator has been added for use with 7.4V Li-Ion betteries.  We've also added
+an external oscillator circuit that lets us bump the chip speed from 8Mhz to
+16Mhz. There is still no recommended blade or hilt design - we zip-tied our
+LEDs, board, & battery to a 1x2 piece of wood.
 
-This is _just_ enough to be able to start swinging the project around. Although
-it's very unwieldy, it gives us an opportunity to build out a power circuit,
-dropping a high-capacity 7.4V Li-Ion battery to the 5Vs required by the AVR
-chip & DotStar LEDs. We've also added an external oscillator circuit that lets
-us bump the chip speed from 8Mhz to 16Mhz.
-
-The firmware has grown at a much faster rate. We've switch the use of our
-APA102 library from the Simple Effects module to the Patterns module. This
-allows us to use arbitrary, dynamic, time-based patterns with our LEDs instead
-of just solid colors and provides the ability to write our own custom patterns.
-We can now limit the current used by the strip so that all 144 LEDs can be lit
-without exceeding the 3A supplied by the power circuit.
+The firmware now supports rendering patterns in addition to solid colors. There
+are pre-defined patterns for flashes, ribbons, bands & scrolls in both RGB &
+Rainbow color sequences. If you don't like the patterns pre-defined in our
+library, you can write your own as well. Some power-saving optimizations have
+been made now that we are limited by battery life, for example, we can limit
+the current used by the strip so that all 144 LEDs can be lit without exceeding
+the 3A supplied by the power circuit.
 
 ### v1.0.0
 
