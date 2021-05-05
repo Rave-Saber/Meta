@@ -14,6 +14,19 @@ microcontroller.
 The Hardware & Firmware releases are kept in lockstep - v1 of the firmware
 should be used with v1 of the hardware.
 
+### v3.0.0
+
+* [Hardware v3.0.0][hw3.0.0]
+* [Firmware v3.0.0][fw3.0.0]
+
+This version migrates us from a prototyping board to an actual PCB. We've
+refined the circuit, switched the majority of components from through-hole to
+SMD, and bumped the oscillator crystal up to 20Mhz.
+
+There were no significant firmware changes, the primary change was modifying
+the code to run at 20Mhz instead of 16Mhz.
+
+
 ### v2.0.0
 
 * [Hardware v2.0.0][hw2.0.0]
@@ -33,6 +46,7 @@ library, you can write your own as well. Some power-saving optimizations have
 been made now that we are limited by battery life, for example, we can limit
 the current used by the strip so that all 144 LEDs can be lit without exceeding
 the 3A supplied by the power circuit.
+
 
 ### v1.0.0
 
@@ -61,3 +75,5 @@ Feel free to contact us for exceptions.
 [fw1.0.0]: https://github.com/Rave-Saber/Rave-Saber-Firmware/tree/v1.0.0
 [hw2.0.0]: https://github.com/Rave-Saber/Rave-Saber-Hardware/tree/v2.0.0
 [fw2.0.0]: https://github.com/Rave-Saber/Rave-Saber-Firmware/tree/v2.0.0
+[hw3.0.0]: https://github.com/Rave-Saber/Rave-Saber-Hardware/tree/v3.0.0
+[fw3.0.0]: https://github.com/Rave-Saber/Rave-Saber-Firmware/tree/v3.0.0
